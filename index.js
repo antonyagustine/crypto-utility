@@ -12,7 +12,7 @@ function validURL(str) {
 }
 
 function hasInvalidFilepathNaming(filepath) {
-  const validFilePathRegex = /^(\[[\w-]+\]|[\w-]+|\/)+$/;
+  const validFilePathRegex = new RegExp(/^(\[[\w-]+\]|[\w-]+|\/)+$/);
 
   const matchResult = filepath.match(validFilePathRegex);
   return matchResult === null;
