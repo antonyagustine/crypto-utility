@@ -11,6 +11,12 @@ function validURL(str) {
   return Boolean(pattern.test(str));
 }
 
+function hasInvalidFilepathNaming(filepath) {
+  const validFilePathRegex = new RegExp(/^(\[[\w-]+\]|[\w-]+|\/)+$/);
+
+  const matchResult = filepath.match(validFilePathRegex);
+  return matchResult === null;
+}
 // Available region list
 const regions = {
   NA: { cma: 'https://api.contentstack.io', cda: 'https://cdn.contentstack.io', name: 'NA' },
