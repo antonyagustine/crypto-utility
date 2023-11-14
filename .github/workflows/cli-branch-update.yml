@@ -18,4 +18,5 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           branch: cli-use-promotion
+          title: 'Update CLI Usage: Merging Changes from main to cli-use'
           reviewers: antonyagustine
