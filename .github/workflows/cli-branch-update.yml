@@ -18,4 +18,6 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           branch: cli-use-promotion
+          title: 'Update CLI Usage: Merging Changes from main to cli-use'
+          body: This pull request includes various updates and changes from the `main` branch to the `cli-use` branch. Review and merge as needed.
           reviewers: antonyagustine
